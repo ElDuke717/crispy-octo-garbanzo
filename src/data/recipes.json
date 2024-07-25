@@ -1,0 +1,28 @@
+[
+    {
+      "id": "REC001",
+      "name": "Basic Cookie Recipe",
+      "version": 1,
+      "date": "2024-07-25",
+      "batchSize": 1000,
+      "batchUnit": "g",
+      "ingredients": [
+        {
+          "code": "ING001",
+          "percent": 45
+        },
+        {
+          "code": "ING002",
+          "percent": 30
+        },
+        {
+          "code": "ING003",
+          "percent": 20
+        },
+        {
+          "code": "ING004",
+          "percent": 5
+        }
+      ]
+    }
+  ]

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Header from './components/Header';
+import RecipeTable from './components/RecipeTable';
+import ingredientsData from './data/ingredients.json';
+import recipesData from './data/recipes.json';
 
 function App() {
+  const [ingredients, setIngredients] = useState([]);
+  const [recipes, setRecipes] = useState([]);
+  const [currentRecipe, setCurrentRecipe] = useState(null);
+
+  useEffect(() => {
+    setIngredients(ingredientsData);
+    setRecipes(recipesData);
+    setCurrentRecipe(recipesData[0]);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header recipe={currentRecipe} />
+      {currentRecipe && (
+        <RecipeTable
+          recipe={currentRecipe}
+          ingredients={ingredients}
+        />
+      )}
     </div>
   );
 }

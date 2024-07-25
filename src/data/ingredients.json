@@ -1,0 +1,27 @@
+[
+    {
+      "code": "ING001",
+      "name": "Flour",
+      "unit": "g"
+    },
+    {
+      "code": "ING002",
+      "name": "Sugar",
+      "unit": "g"
+    },
+    {
+      "code": "ING003",
+      "name": "Butter",
+      "unit": "g"
+    },
+    {
+      "code": "ING004",
+      "name": "Eggs",
+      "unit": "pcs"
+    },
+    {
+      "code": "ING005",
+      "name": "Milk",
+      "unit": "ml"
+    }
+  ]
